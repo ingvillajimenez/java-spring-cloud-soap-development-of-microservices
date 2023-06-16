@@ -1,0 +1,11 @@
+server:
+  port: ${PORT:8098}
+  
+info:
+  app:
+    name: bookstore-service
+
+# give the application a name
+spring:
+  application:
+    name: bookstore-service 

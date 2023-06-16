@@ -1,0 +1,8 @@
+package com.example.demo;
+
+public class BookController {
+	
+	public Book getBook() {
+		return new Book(1, "aaaa");
+	}
+}

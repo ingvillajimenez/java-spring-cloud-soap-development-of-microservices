@@ -1,0 +1,22 @@
+server:
+  port: 8099
+#  port: ${PORT:8099}
+  
+# configure eureka client
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 3
+  client:
+    serviceUrl:
+      defaultZone: http://user:password@localhost:6767/eureka/
+
+# custom attribute for the actuator info endpoint
+info:
+  app:
+    name: bookstore-service
+
+# given the application a name
+spring:
+  application:
+    name: bookstore-service
